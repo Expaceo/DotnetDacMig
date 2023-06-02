@@ -1,5 +1,8 @@
 # Dotnet Dacpac Migrations
 
+[![Version](https://img.shields.io/nuget/vpre/DotnetDacMigration.svg)](https://www.nuget.org/packages/DotnetDacMigration)
+[![Downloads](https://img.shields.io/nuget/dt/DotnetDacMigration.svg)](https://www.nuget.org/packages/DotnetDacMigration)
+
 DacMig is a dotnet tool used to create migration scripts for Sql projects.
 This tool is only compatible with SQL projects that uses the [.NET SDK](https://www.nuget.org/packages/Microsoft.Build.Sql)
 
