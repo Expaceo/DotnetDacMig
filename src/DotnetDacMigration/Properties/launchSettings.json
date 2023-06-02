@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "DotnetDacMigration": {
+      "commandName": "Project",
+      "commandLineArgs": "add test -p C:\\Dev\\TestDB"
+    }
+  }
+}

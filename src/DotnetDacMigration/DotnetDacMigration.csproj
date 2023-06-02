@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFrameworks>net6.0;net7.0</TargetFrameworks>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Version>0.0.3</Version>
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>dacmig</ToolCommandName>
+    <PackageOutputPath>./nupkg</PackageOutputPath>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="nupkg\**" />
+    <EmbeddedResource Remove="nupkg\**" />
+    <None Remove="nupkg\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Crayon" Version="2.0.69" />
+    <PackageReference Include="Microsoft.SqlServer.DacFx" Version="162.0.52" />
+    <PackageReference Include="Microsoft.SqlServer.SqlManagementObjects" Version="170.13.0" />
+    <PackageReference Include="System.CommandLine" Version="2.0.0-beta4.22272.1" />
+    <PackageReference Include="System.CommandLine.Hosting" Version="0.4.0-alpha.22272.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+</Project>
