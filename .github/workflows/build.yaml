@@ -29,6 +29,6 @@ jobs:
     - name: Pack
       run: dotnet pack -c Release src/DotnetDacMigration
     - name: Publish package
-      run: dotnet nuget push src/DotnetDacMigration/nupkg/*.nupkg
+      run: dotnet nuget push src/DotnetDacMigration/nupkg/*.nupkg -s https://api.nuget.org/v3/index.json
       if: ${{ github.ref == 'refs/heads/main' }}
     
