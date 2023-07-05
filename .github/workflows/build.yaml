@@ -18,8 +18,6 @@ jobs:
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: 6.0.x
-      env:
-        NUGET_AUTH_TOKEN: ${{secrets.NUGET_KEY}}        
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
@@ -29,6 +27,6 @@ jobs:
     - name: Pack
       run: dotnet pack -c Release src/DotnetDacMigration
     - name: Publish package
-      run: dotnet nuget push src/DotnetDacMigration/nupkg/*.nupkg -s https://api.nuget.org/v3/index.json
+      run: dotnet nuget push src/DotnetDacMigration/nupkg/*.nupkg -s https://api.nuget.org/v3/index.json -k ${{secrets.NUGET_KEY}} 
       if: ${{ github.ref == 'refs/heads/main' }}
     
