@@ -26,7 +26,7 @@ jobs:
       run: dotnet build --no-restore -c Release
     - name: Test
       run: dotnet test --no-build --verbosity normal
-    - name: Build
+    - name: Pack
       run: dotnet pack -c Release src/DotnetDacMigration
     - name: Publish package
       run: dotnet nuget push src/DotnetDacMigration/nupkg/*.nupkg
