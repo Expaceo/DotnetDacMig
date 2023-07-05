@@ -5,14 +5,14 @@
     <TargetFrameworks>net6.0;net7.0</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <Version>0.0.4</Version>
+    <Version>0.0.5</Version>
     <PackAsTool>true</PackAsTool>
     <ToolCommandName>dacmig</ToolCommandName>
     <PackageId>DotnetDacMigration</PackageId>
     <PackageProjectUrl>https://github.com/Expaceo/DotnetDacMig</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Expaceo/DotnetDacMig</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageOutputPath>../nupkg</PackageOutputPath>
+    <PackageOutputPath>nupkg</PackageOutputPath>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
